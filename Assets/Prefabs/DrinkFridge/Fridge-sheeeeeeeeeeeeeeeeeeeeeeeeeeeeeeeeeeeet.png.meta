@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: f605d4d69dfe6e94da16ee4c10df7547
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1079696268946276197
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_0
+  - first:
+      213: -3404084805250440439
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_1
+  - first:
+      213: -5385250213148430867
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_2
+  - first:
+      213: 1092455926033503733
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_3
+  - first:
+      213: -2666586358266443309
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_4
+  - first:
+      213: -8227837882604667337
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_5
+  - first:
+      213: 3711546382174298559
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_6
+  - first:
+      213: -6075144706995595216
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_7
+  - first:
+      213: -5057710475098291751
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_8
+  - first:
+      213: -3577588675027115418
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_9
+  - first:
+      213: -1576224823211934289
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_10
+  - first:
+      213: -2659308659895916695
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_11
+  - first:
+      213: 8881170525461367879
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_12
+  - first:
+      213: 4906228577061231499
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_13
+  - first:
+      213: -9075699289287893237
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_14
+  - first:
+      213: 3832894115538052944
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_15
+  - first:
+      213: 8791822323938306044
+    second: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f7bdf390adbfe00800000000000000
+      internalID: 1079696268946276197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9032ebdb7e242c0d0800000000000000
+      internalID: -3404084805250440439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dede0b2a67fb345b0800000000000000
+      internalID: -5385250213148430867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f55ffb60ee292f00800000000000000
+      internalID: 1092455926033503733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d940a8d5d16efad0800000000000000
+      internalID: -2666586358266443309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eb8d9e909d0dd80800000000000000
+      internalID: -8227837882604667337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1a2ec15cf028330800000000000000
+      internalID: 3711546382174298559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038de649310c0bba0800000000000000
+      internalID: -6075144706995595216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d18efaae176fc9b0800000000000000
+      internalID: -5057710475098291751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6626c801e0ad95ec0800000000000000
+      internalID: -3577588675027115418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadbc4edfdf102ae0800000000000000
+      internalID: -1576224823211934289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967a8ca0ddc381bd0800000000000000
+      internalID: -2659308659895916695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c4bc7d981404b70800000000000000
+      internalID: 8881170525461367879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bda9285ec661440800000000000000
+      internalID: 4906228577061231499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fdabdd493ac0280800000000000000
+      internalID: -9075699289287893237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057a45af3ec213530800000000000000
+      internalID: 3832894115538052944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fridge-sheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf721b292d3d20a70800000000000000
+      internalID: 8791822323938306044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
