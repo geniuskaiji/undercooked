@@ -27,6 +27,9 @@ public class StoveScript : MonoBehaviour
 	public UnityEvent enterTriggerEvent = new UnityEvent();
 	public UnityEvent exitTriggerEvent = new UnityEvent();
 
+    public UnityEvent startBurgerEvent = new UnityEvent();
+    public UnityEvent flipBurgerEvent = new UnityEvent();
+    public UnityEvent takeBurgerEvent = new UnityEvent();
 
     public Animator anim;
 
@@ -139,18 +142,23 @@ public class StoveScript : MonoBehaviour
         isReady = false;
 
 		pattyGrilling = true;
-        anim.SetTrigger("AddBurger");
 
-        anim.ResetTrigger(0);
-        anim.ResetTrigger(1);
-        anim.ResetTrigger(2);
-        anim.ResetTrigger(3);
-        anim.ResetTrigger(4);
+        anim.SetTrigger("AddBurger");
+        anim.ResetTrigger("RawToCooking");
+        anim.ResetTrigger("CookingToCooked");
+        anim.ResetTrigger("Flip");
+        anim.ResetTrigger("RemoveBurger");
+
+
         firstSideIsCooking = false;
 
         //	pattyArtRaw.SetActive(true);        // Set the pattyArtRaw GameObject on
         Debug.Log("Patty Added");
-	}
+
+        startBurgerEvent.Invoke();
+
+
+    }
 
 	private void FlipPatty()
 	{
@@ -162,6 +170,8 @@ public class StoveScript : MonoBehaviour
 	//	pattyArtCooking.SetActive(true);    // Set the pattyArtCooking GameObject on
 		Debug.Log("Patty Flipped");
         anim.SetTrigger("Flip");
+
+        flipBurgerEvent.Invoke();
     }
 
 	private void RemovePatty()
@@ -175,6 +185,8 @@ public class StoveScript : MonoBehaviour
         // Done, remove Patty
         anim.SetTrigger("RemoveBurger");
         inv.AddBurger();
+
+        takeBurgerEvent.Invoke();
     }
 
 }

@@ -87,9 +87,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1566346579
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -168,9 +168,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1566346579
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4750190662926388543, guid: dc1495c3a45fb374d94effe04f53dd9f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -243,7 +243,16 @@ MonoBehaviour:
   exitTriggerEvent:
     m_PersistentCalls:
       m_Calls: []
-  anim: {fileID: 0}
+  startBurgerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  flipBurgerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  takeBurgerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  anim: {fileID: 4560513002671346324}
   burgerTimeToCookSide: 5
   inv: {fileID: 0}
 --- !u!61 &8796212152167959771
