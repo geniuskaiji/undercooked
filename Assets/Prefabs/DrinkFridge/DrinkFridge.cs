@@ -22,6 +22,7 @@ public class DrinkFridge : MonoBehaviour
     //Defining the UnityEvents so that we can all enterTriggerEvent.invoke() later
     public UnityEvent enterTriggerEvent = new UnityEvent();
     public UnityEvent exitTriggerEvent = new UnityEvent();
+    public UnityEvent getDrinkEvent = new UnityEvent();
     // Start is called before the first frame update
 
     // --- Handle Art ---
@@ -73,8 +74,11 @@ public class DrinkFridge : MonoBehaviour
         // show UI that the item is out. 
         if (numberOfDrinksRemaining > 0) 
         {
-
+            // add to inventory
             inv.AddDrink();
+
+            // play event (for audio)
+            getDrinkEvent.Invoke();
 
             // player can get a drink
             // remove a drink from the numberOfDrinksRemaining
