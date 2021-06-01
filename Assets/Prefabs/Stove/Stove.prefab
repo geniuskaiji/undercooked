@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2863359333686830951
+--- !u!1 &168685605976976747
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5900869219907150574}
-  - component: {fileID: 2561476843465277172}
-  - component: {fileID: 6556568790333085808}
-  - component: {fileID: 2863359333686830955}
+  - component: {fileID: 650373197764655758}
+  - component: {fileID: 6806686919981885936}
+  - component: {fileID: 566759859272836457}
+  - component: {fileID: 168685605976976743}
   m_Layer: 0
-  m_Name: 'Stove '
+  m_Name: Stove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5900869219907150574
+--- !u!4 &650373197764655758
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2863359333686830951}
+  m_GameObject: {fileID: 168685605976976747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6139280581871025447}
-  - {fileID: 3388589977106497368}
-  - {fileID: 8830496095016598073}
+  - {fileID: 6993471138115960471}
+  - {fileID: 3380582987528471072}
+  - {fileID: 8233588687895588628}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2561476843465277172
+--- !u!114 &6806686919981885936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2863359333686830951}
+  m_GameObject: {fileID: 168685605976976747}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 585ea03ea1dffa648801aa61859b98ff, type: 3}
@@ -64,7 +64,7 @@ MonoBehaviour:
   startBurgerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2863359333686830955}
+      - m_Target: {fileID: 168685605976976743}
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -79,7 +79,7 @@ MonoBehaviour:
   flipBurgerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2863359333686830955}
+      - m_Target: {fileID: 168685605976976743}
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -94,16 +94,16 @@ MonoBehaviour:
   takeBurgerEvent:
     m_PersistentCalls:
       m_Calls: []
-  anim: {fileID: 6852319440350360435}
+  anim: {fileID: 585525086560885256}
   burgerTimeToCookSide: 5
   inv: {fileID: 0}
---- !u!61 &6556568790333085808
+--- !u!61 &566759859272836457
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2863359333686830951}
+  m_GameObject: {fileID: 168685605976976747}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -123,17 +123,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.9}
   m_EdgeRadius: 0
---- !u!82 &2863359333686830955
+--- !u!82 &168685605976976743
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2863359333686830951}
+  m_GameObject: {fileID: 168685605976976747}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -7822466012107639558, guid: e7d1ac928d5aa5f42a71ff4ac10aa00c,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 57f15de0106568f45bddcc79115b2a52, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -220,7 +219,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &3012728066115039191
+--- !u!1 &3501080772039659689
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,8 +227,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8830496095016598073}
-  - component: {fileID: 5047948445056198940}
+  - component: {fileID: 8233588687895588628}
+  - component: {fileID: 5338961786061227526}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -237,27 +236,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8830496095016598073
+--- !u!4 &8233588687895588628
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3012728066115039191}
+  m_GameObject: {fileID: 3501080772039659689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5900869219907150574}
+  m_Father: {fileID: 650373197764655758}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &5047948445056198940
+--- !u!61 &5338961786061227526
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3012728066115039191}
+  m_GameObject: {fileID: 3501080772039659689}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -277,7 +276,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.63}
   m_EdgeRadius: 0
---- !u!1 &5718534741991769285
+--- !u!1 &3736396478563247527
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,9 +284,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3388589977106497368}
-  - component: {fileID: 6852319440350360435}
-  - component: {fileID: 5444590644568489742}
+  - component: {fileID: 3380582987528471072}
+  - component: {fileID: 585525086560885256}
+  - component: {fileID: 4101974519921540392}
   m_Layer: 0
   m_Name: Raw Burger
   m_TagString: Untagged
@@ -295,28 +294,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3388589977106497368
+--- !u!4 &3380582987528471072
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5718534741991769285}
+  m_GameObject: {fileID: 3736396478563247527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.092, y: 0.378, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5900869219907150574}
+  m_Father: {fileID: 650373197764655758}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6852319440350360435
+--- !u!95 &585525086560885256
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5718534741991769285}
+  m_GameObject: {fileID: 3736396478563247527}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 87666cfe00784144894db2d76056b124, type: 2}
@@ -328,13 +327,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &5444590644568489742
+--- !u!212 &4101974519921540392
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5718534741991769285}
+  m_GameObject: {fileID: 3736396478563247527}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -365,7 +364,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1566346579
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -378,7 +377,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &6914585125575199453
+--- !u!1 &4313342270074216851
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,8 +385,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6139280581871025447}
-  - component: {fileID: 122248307022751801}
+  - component: {fileID: 6993471138115960471}
+  - component: {fileID: 3301695104095316452}
   m_Layer: 0
   m_Name: StoveRenderer
   m_TagString: Untagged
@@ -395,27 +394,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6139280581871025447
+--- !u!4 &6993471138115960471
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6914585125575199453}
+  m_GameObject: {fileID: 4313342270074216851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5900869219907150574}
+  m_Father: {fileID: 650373197764655758}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &122248307022751801
+--- !u!212 &3301695104095316452
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6914585125575199453}
+  m_GameObject: {fileID: 4313342270074216851}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -446,7 +445,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1566346579
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 4750190662926388543, guid: dc1495c3a45fb374d94effe04f53dd9f,
     type: 3}
