@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 92b1c507d66750e43a952fdba02a1ad8
+guid: dc25239cac240334eb4d33c56ebb937f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3284418069785648969
-    second: locust furnace_0
+      213: -355515522828893924
+    second: CondimentFridge-Sheet-export_0
   - first:
-      213: 1926606121367981589
-    second: locust furnace_1
+      213: 6668703071168244576
+    second: CondimentFridge-Sheet-export_1
   - first:
-      213: 4271547051534496332
-    second: locust furnace_2
+      213: 5218057573480189274
+    second: CondimentFridge-Sheet-export_2
   - first:
-      213: 5826922287235564910
-    second: locust furnace_0
-  - first:
-      213: 7005962823315015266
-    second: locust furnace_1
-  - first:
-      213: 8168798657406006302
-    second: locust furnace_2
+      213: -2984510858285000990
+    second: CondimentFridge-Sheet-export_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -82,7 +76,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,7 +88,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: locust furnace_0
+      name: CondimentFridge-Sheet-export_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 14
-        width: 62
-        height: 48
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e658b78a2f26dd050800000000000000
-      internalID: 5826922287235564910
+      spriteID: c1185adf384f01bf0800000000000000
+      internalID: -355515522828893924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: locust furnace_1
+      name: CondimentFridge-Sheet-export_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 14
-        width: 62
-        height: 48
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 266c841911e2a3160800000000000000
-      internalID: 7005962823315015266
+      spriteID: 06b2a856c1efb8c50800000000000000
+      internalID: 6668703071168244576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: locust furnace_2
+      name: CondimentFridge-Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 14
-        width: 62
-        height: 48
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +155,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e147f5849176d5170800000000000000
-      internalID: 8168798657406006302
+      spriteID: a5dc2d477b34a6840800000000000000
+      internalID: 5218057573480189274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CondimentFridge-Sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e650afdf23e496d0800000000000000
+      internalID: -2984510858285000990
       vertices: []
       indices: 
       edges: []
