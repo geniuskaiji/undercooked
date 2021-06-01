@@ -8,13 +8,13 @@ public class PlayerInventory : MonoBehaviour
     public bool hasPizza = false;
     public int burgers;
     public int drinks;
-    public int deluxeBurger = 0;
+    public int deluxeBurgers = 0;
     public bool hasTrash = false;
     public bool hasMop = false;
     
     public void AddMop(){
 
-        if( hasPizza || burgers > 0 || drinks > 0 || deluxeBurger >0 || hasTrash)
+        if( hasPizza || burgers > 0 || drinks > 0 || deluxeBurgers > 0 || hasTrash )
         {
             Debug.Log("Can't pick up mop while my hands are full");
         }
@@ -34,7 +34,7 @@ public class PlayerInventory : MonoBehaviour
     public bool UpgradeBurger(){
         if( burgers > 0){
             burgers--;
-            deluxeBurger++;
+            deluxeBurgers++;
             return true;
         }else{
             // no burgers found
@@ -45,7 +45,7 @@ public class PlayerInventory : MonoBehaviour
     // 
     public bool AddPizza()
     {
-        if(burgers > 0 || deluxeBurger > 0 || drinks > 1 || hasTrash)
+        if ( burgers > 0 || deluxeBurgers > 0 || drinks > 1 || hasTrash )
         {
             Debug.Log("Can't pick up a pizza with a burger in your hand");
             return false;
@@ -84,7 +84,7 @@ public class PlayerInventory : MonoBehaviour
     {
         // first enter your pin number
         // Statement within the method
-        if(burgers > 1 || drinks > 1 || hasPizza || (burgers > 0 && drinks > 0) || hasTrash)
+        if(burgers > 1 || deluxeBurgers > 1 || drinks > 1 || hasPizza || ( burgers + drinks + deluxeBurgers > 1 ) || hasTrash )
         {
            // We are full and can't take the burger. 
         }
@@ -129,11 +129,31 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
+
+    public bool HasDeluxeBurger() // Unused method
+    {
+        return (deluxeBurgers > 0);
+    }
+
+    public bool RemoveDeluxeBurger()
+    {
+        if (burgers > 0)
+        {
+            burgers--;
+            Debug.Log("Burger Removed");
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void AddDrink()
     {
         // first enter your pin number
         // Statement within the method
-        if (burgers > 1 || drinks > 1 || hasPizza || (burgers > 0 && drinks > 0) || hasTrash)
+        if ( burgers > 1 || drinks > 1 || hasPizza || ( burgers + drinks + deluxeBurgers > 1 ) || hasTrash )
         {
             // We are full and can't take the drink. 
         }
