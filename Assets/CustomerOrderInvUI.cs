@@ -16,7 +16,7 @@ public class CustomerOrderInvUI : MonoBehaviour
 */
 
     [Header("Inventory Reference")]
-    public NewOrder inv;
+    public CustomerOrder inv;
 
     [Header("Inventory Icons")]
     public GameObject pizzaIcon;

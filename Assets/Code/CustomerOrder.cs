@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewOrder : MonoBehaviour
+public class CustomerOrder : MonoBehaviour
 {
     // Variables
     public int pizzasOrdered;
@@ -33,6 +33,8 @@ public class NewOrder : MonoBehaviour
     public AudioSource playAudio; // Audio player
 
     public PlayerInventory inventory;
+
+    public CustomerMovement movement;
 
 
     // Update is called once per frame
@@ -83,7 +85,7 @@ public class NewOrder : MonoBehaviour
         {
             Debug.Log("1 Deluxe Burger given to customer");
             deluxeBurgersOrdered--;
-            dingBellCount =  1;
+            dingBellCount = 1;
         }
 
         if ( (drinksOrdered > 0 ) && inventory.RemoveDrink() ) // Run RemoveDrink() from PlayerInventory.cs on the player
@@ -94,10 +96,13 @@ public class NewOrder : MonoBehaviour
         }
 
         // Check if order is complete
-        if ( (pizzasOrdered == 0) && (burgersOrdered == 0) && (drinksOrdered == 0) && (deluxeBurgersOrdered == 0) )
+        if ( (pizzasOrdered == 0) && (burgersOrdered == 0) && (deluxeBurgersOrdered == 0) && (drinksOrdered == 0) )
         {
             Debug.Log("Customer order complete");
             dingBellCount = 2;
+
+            // Make the customer walk away with the CustomerMovement script
+            movement.WalkOut();
         }
 
         // Check if the bell needs to be dinged
@@ -131,7 +136,7 @@ public class NewOrder : MonoBehaviour
 
 
         // Check if the order was completely empty
-        if ((pizzasOrdered == 0) && (burgersOrdered == 0) && (drinksOrdered == 0))
+        if ((pizzasOrdered == 0) && (burgersOrdered == 0) && (deluxeBurgersOrdered == 0) && (drinksOrdered == 0))
         {
             Debug.Log("Warning: Order contained no items. Defaulting to order of one burger. (Make sure the customer orders at least one item!)");
             burgersOrdered = 1;

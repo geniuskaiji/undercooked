@@ -137,10 +137,10 @@ public class PlayerInventory : MonoBehaviour
 
     public bool RemoveDeluxeBurger()
     {
-        if (burgers > 0)
+        if (deluxeBurgers > 0)
         {
-            burgers--;
-            Debug.Log("Burger Removed");
+            deluxeBurgers--;
+            Debug.Log("Deluxe Burger Removed");
             return true;
         }
         else
