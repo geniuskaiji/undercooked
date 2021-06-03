@@ -7,7 +7,7 @@ public class CustomerMovement : MonoBehaviour
     public float speed = 1f;
     private float moveForce = 0f;
 
-    private bool wasAtCounter = false;
+    //private bool wasAtCounter = false;
 
     // Editor variables
     public Rigidbody2D rigid;
@@ -40,16 +40,15 @@ public class CustomerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Freeze the customer's momentum the first time the customer collides with anything.
-        // Change this to happen only when colliding with a counter trigger tag.
-        if (!wasAtCounter)
+        // Only stop moving if the collision has the Counter tag
+        if (collision.gameObject.CompareTag("Counter"))
         {
             Debug.Log("Customer is at counter");
             moveForce = 0f;
 
             rigid.constraints = RigidbodyConstraints2D.FreezePosition;
             rigid.constraints = RigidbodyConstraints2D.FreezePositionY;
-            wasAtCounter = true;
+            //wasAtCounter = true;
         }
     }
 }
