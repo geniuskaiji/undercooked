@@ -67,8 +67,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1566346579
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8d2d68bbd0579f04fad3330d16b80ef2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -90,9 +90,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267508663164205389}
-  - component: {fileID: 8267508663164205386}
   - component: {fileID: 8267508663164205388}
   - component: {fileID: 1340804115}
+  - component: {fileID: 647841245344342032}
+  - component: {fileID: 5661763291411133879}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Untagged
@@ -109,42 +110,12 @@ Transform:
   m_GameObject: {fileID: 8267508663164205387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.85, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8267508662543710955}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8267508663164205386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8267508663164205387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ecec9ebb8657e4dae41cd09ddb810d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzasOrdered: 0
-  burgersOrdered: 0
-  drinksOrdered: 0
-  orderTaken: 0
-  timeSinceOrderTaken: 0
-  minPizzasCanOrder: 0
-  minBurgersCanOrder: 0
-  minDrinksCanOrder: 0
-  maxPizzasCanOrder: 2
-  maxBurgersCanOrder: 2
-  maxDrinksCanOrder: 2
-  sfxOrderServedBellSingle: {fileID: 8300000, guid: e5b86f58fc83bb74abad20740cbe9793,
-    type: 3}
-  sfxOrderServedBellDouble: {fileID: 8300000, guid: 473b23605dfb0ac40b63f59e321b4a93,
-    type: 3}
-  sfxOrderTakenSound: {fileID: 8300000, guid: 2f1e2d621020405418607a91d9f6d09f, type: 3}
-  playAudio: {fileID: 1340804115}
-  inventory: {fileID: 0}
 --- !u!58 &8267508663164205388
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -158,9 +129,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.29997277}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.20002723
+  m_Radius: 0.15
 --- !u!82 &1340804115
 AudioSource:
   m_ObjectHideFlags: 0
@@ -257,3 +228,48 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &647841245344342032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267508663164205387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ecec9ebb8657e4dae41cd09ddb810d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzasOrdered: 0
+  burgersOrdered: 0
+  deluxeBurgersOrdered: 0
+  drinksOrdered: 0
+  orderTaken: 0
+  timeSinceOrderTaken: 0
+  minPizzasCanOrder: 0
+  minBurgersCanOrder: 0
+  minDeluxeBurgersCanOrder: 0
+  minDrinksCanOrder: 0
+  maxPizzasCanOrder: 2
+  maxBurgersCanOrder: 2
+  maxDeluxeBurgersCanOrder: 2
+  maxDrinksCanOrder: 2
+  sfxOrderServedBellSingle: {fileID: 8300000, guid: e5b86f58fc83bb74abad20740cbe9793,
+    type: 3}
+  sfxOrderServedBellDouble: {fileID: 8300000, guid: 473b23605dfb0ac40b63f59e321b4a93,
+    type: 3}
+  sfxOrderTakenSound: {fileID: 0}
+  playAudio: {fileID: 1340804115}
+  inventory: {fileID: 0}
+--- !u!114 &5661763291411133879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267508663164205387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd046bed6817f3498ce58dfa8ffa82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
