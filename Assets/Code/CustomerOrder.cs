@@ -46,20 +46,24 @@ public class CustomerOrder : MonoBehaviour
             timeSinceOrderTaken += Time.deltaTime;
         }
     }
-
+    
+    // Take Order
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Player near customer");
-        if ( orderTaken == false )
+        // Check if the collision has the tag Player
+        if (collision.gameObject.CompareTag("Player"))
         {
-            GenerateNewOrder();
-            orderTaken = true;
+            Debug.Log("Player near customer");
+            if (orderTaken == false)
+            {
+                GenerateNewOrder();
+                orderTaken = true;
+            }
+            else
+            {
+                ReceiveOrder();
+            }
         }
-        else
-        {
-            ReceiveOrder();
-        }
-
     }
 
 
