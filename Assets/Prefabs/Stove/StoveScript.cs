@@ -79,7 +79,7 @@ public class StoveScript : MonoBehaviour
 	// Run when player is nearby
 	public void OnTriggerEnter2D(Collider2D Collision)
 	{
-		Debug.Log("Player nearby grill");
+		//Debug.Log("Player nearby grill");
 		isPlayerNearby = true;
 
 	//	ui.SetActive(true);
@@ -89,8 +89,8 @@ public class StoveScript : MonoBehaviour
 	// Run when player leaves grill
 	public void OnTriggerExit2D(Collider2D Collision)
 	{
-		Debug.Log("Player leaves grill");
-		isPlayerNearby = true;
+		//Debug.Log("Player leaves grill");
+		isPlayerNearby = false;
 
 	//	ui.SetActive(false);
 		exitTriggerEvent.Invoke();
@@ -153,7 +153,7 @@ public class StoveScript : MonoBehaviour
         firstSideIsCooking = false;
 
         //	pattyArtRaw.SetActive(true);        // Set the pattyArtRaw GameObject on
-        Debug.Log("Patty Added");
+        Debug.Log("Patty Added to grill");
 
         startBurgerEvent.Invoke();
 
@@ -168,7 +168,7 @@ public class StoveScript : MonoBehaviour
 
 	//	pattyArtRaw.SetActive(false);		// Set the pattyArtRaw GameObject off
 	//	pattyArtCooking.SetActive(true);    // Set the pattyArtCooking GameObject on
-		Debug.Log("Patty Flipped");
+		Debug.Log("Patty Flipped on grill");
         anim.SetTrigger("Flip");
 
         flipBurgerEvent.Invoke();
@@ -180,7 +180,7 @@ public class StoveScript : MonoBehaviour
 		//pattyReady = true;
 
 	//	pattyArtCooking.SetActive(false);	// Set the pattyArtCooking GameObject off
-		Debug.Log("Patty Removed");
+		Debug.Log("Patty Removed from grill");
 
         // Done, remove Patty
         anim.SetTrigger("RemoveBurger");
