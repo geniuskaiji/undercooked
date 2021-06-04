@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Counter
+  - Customer
   layers:
   - Default
   - TransparentFX
@@ -42,8 +44,11 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 184303571
+    uniqueID: 1366197673
     locked: 0
   - name: Foreground
-    uniqueID: 1566346579
+    uniqueID: 738787001
+    locked: 0
+  - name: Player
+    uniqueID: 3064987799
     locked: 0

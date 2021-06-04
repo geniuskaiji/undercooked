@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 92b1c507d66750e43a952fdba02a1ad8
+guid: a44b9f77756a7b04fa30e63707aa77ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3284418069785648969
-    second: locust furnace_0
+      213: -6734619310678207969
+    second: Layout_compiled_4_0
   - first:
-      213: 1926606121367981589
-    second: locust furnace_1
+      213: -5903619327910767881
+    second: Layout_compiled_4_1
   - first:
-      213: 4271547051534496332
-    second: locust furnace_2
-  - first:
-      213: 5826922287235564910
-    second: locust furnace_0
-  - first:
-      213: 7005962823315015266
-    second: locust furnace_1
-  - first:
-      213: 8168798657406006302
-    second: locust furnace_2
+      213: -1020774919438872086
+    second: Layout_compiled_4_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -82,7 +73,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,11 +93,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: locust furnace_0
+      name: Layout_compiled_4_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 14
-        width: 62
-        height: 48
+        x: 0
+        y: 0
+        width: 50
+        height: 673
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +122,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e658b78a2f26dd050800000000000000
-      internalID: 5826922287235564910
+      spriteID: f121a812b63d982a0800000000000000
+      internalID: -6734619310678207969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: locust furnace_1
+      name: Layout_compiled_4_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 14
-        width: 62
-        height: 48
+        x: 650
+        y: 0
+        width: 50
+        height: 673
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,29 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 266c841911e2a3160800000000000000
-      internalID: 7005962823315015266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: locust furnace_2
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 14
-        width: 62
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e147f5849176d5170800000000000000
-      internalID: 8168798657406006302
+      spriteID: 7f29fbeff71221ea0800000000000000
+      internalID: -5903619327910767881
       vertices: []
       indices: 
       edges: []
