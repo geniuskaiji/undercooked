@@ -16,7 +16,7 @@ public class DrinkFridge : MonoBehaviour
     // data about the object.
     public bool hasDrinks;
     public int numberOfDrinksRemaining;
-
+    int maxStock = 15;
    // public GameObject ui; //The UI, can call ui.SetActive(true) method on it
 
     //Defining the UnityEvents so that we can all enterTriggerEvent.invoke() later
@@ -39,7 +39,15 @@ public class DrinkFridge : MonoBehaviour
         if (isPlayerNearby) {
             if (Input.GetButtonDown("Jump")) {
                 // Activate the action of this appliance
-                GetDrink();
+                if (numberOfDrinksRemaining < 15 && inv.hasRestockBox)
+                {
+                    RestockDrinks();
+                    Debug.Log("Restocked Drink Fridge");
+                }
+                else
+                {
+                    GetDrink();
+                }
             }
         }
 
@@ -75,11 +83,10 @@ public class DrinkFridge : MonoBehaviour
         // show UI that the item is out. 
         if (numberOfDrinksRemaining > 0) 
         {
-            // add to inventory
-            inv.AddDrink();
 
-            // play event (for audio)
+            inv.AddDrink();
             getDrinkEvent.Invoke();
+
 
             // player can get a drink
             // remove a drink from the numberOfDrinksRemaining
@@ -92,7 +99,12 @@ public class DrinkFridge : MonoBehaviour
         Debug.Log("Print out a message to the console");
             
     }
-
+        public void RestockDrinks()
+    {
+        numberOfDrinksRemaining = maxStock;
+        inv.RemoveRestockBox();
+        restockDrinksEvent.Invoke();
+    }
     
 
 }
