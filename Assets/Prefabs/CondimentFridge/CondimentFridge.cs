@@ -12,7 +12,7 @@ public class CondimentFridge : MonoBehaviour
     public bool isOpen = false;
     // References
     public Animator anim;
-
+    public PlayerInventory inv;
     // Art Variables
     public SpriteRenderer FridgeSprite;
     public Sprite FullFridge;
@@ -24,7 +24,6 @@ public class CondimentFridge : MonoBehaviour
     public int numberOfCondiments;
     int maxStock = 8;
 
-    public PlayerInventory inv;
 
     // Unity Events controlled by player
     public UnityEvent enterTriggerEvent = new UnityEvent();
@@ -47,7 +46,7 @@ public class CondimentFridge : MonoBehaviour
             {
                 if (isOpen)
                 {
-                    if (numberOfCondiments < 1)
+                    if (numberOfCondiments < 8 && inv.hasRestockBox)
                     {
                         RestockCondiments();
                     }
@@ -130,11 +129,12 @@ public class CondimentFridge : MonoBehaviour
         closeFridgeEvent.Invoke();
     }
     public void RestockCondiments() {
-        if (numberOfCondiments < 1)
-        {
+        
+        
             numberOfCondiments = maxStock;
+            inv.RemoveRestockBox();
             restockCondimentEvent.Invoke();
         }        
-        }
+        
 
     } 

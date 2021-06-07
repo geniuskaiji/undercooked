@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7786327903366356194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.68, z: 0}
-  m_LocalScale: {x: 1.1324, y: 1.1324, z: 1.1324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 738787001
+  m_SortingLayerID: 1566346579
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -467360990241707491, guid: 01722d005f1a39d40aa7b7dd4f621025,
@@ -104,13 +104,13 @@ MonoBehaviour:
   hasCondiments: 0
   isOpen: 0
   anim: {fileID: 2130898834}
+  inv: {fileID: 0}
   FridgeSprite: {fileID: 7786327903366356196}
   FullFridge: {fileID: -2984510858285000990, guid: dc25239cac240334eb4d33c56ebb937f,
     type: 3}
   EmptyFridge: {fileID: -8703556467766788465, guid: fb8c90cdf6a060541a063e1e2bd325f0,
     type: 3}
   numberOfCondiments: 8
-  inv: {fileID: 0}
   enterTriggerEvent:
     m_PersistentCalls:
       m_Calls:

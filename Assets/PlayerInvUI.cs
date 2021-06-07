@@ -42,8 +42,8 @@ public class PlayerInvUI : MonoBehaviour
         burgerIcon.SetActive(inv.burgers > 0);
         burgerCountText.text = "" + inv.burgers;
         // Deluxe Burger
-        deluxeBurgerIcon.SetActive(inv.deluxeBurgers > 0);
-        deluxeBurgerCountText.text = "" + inv.deluxeBurgers;
+        deluxeBurgerIcon.SetActive(inv.deluxeBurger > 0);
+        deluxeBurgerCountText.text = "" + inv.deluxeBurger;
         // Drinks
         drinkIcon.SetActive(inv.drinks > 0);
         drinkCountText.text = "" + inv.drinks;

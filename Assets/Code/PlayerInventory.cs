@@ -8,13 +8,13 @@ public class PlayerInventory : MonoBehaviour
     public bool hasPizza = false;
     public int burgers;
     public int drinks;
-    public int deluxeBurgers = 0;
+    public int deluxeBurger = 0;
     public bool hasTrash = false;
     public bool hasMop = false;
-    
-    public void AddMop(){
+    public bool hasRestockBox = false;
+    public void AddMop() {
 
-        if( hasPizza || burgers > 0 || drinks > 0 || deluxeBurgers > 0 || hasTrash )
+        if (hasPizza || burgers > 0 || drinks > 0 || deluxeBurger > 0 || hasTrash || hasRestockBox )
         {
             Debug.Log("Can't pick up mop while my hands are full");
         }
@@ -31,12 +31,12 @@ public class PlayerInventory : MonoBehaviour
         hasMop = false;
     }
 
-    public bool UpgradeBurger(){
-        if( burgers > 0){
+    public bool UpgradeBurger() {
+        if (burgers > 0) {
             burgers--;
-            deluxeBurgers++;
+            deluxeBurger++;
             return true;
-        }else{
+        } else {
             // no burgers found
             return false;
         }
@@ -45,7 +45,7 @@ public class PlayerInventory : MonoBehaviour
     // 
     public bool AddPizza()
     {
-        if ( burgers > 0 || deluxeBurgers > 0 || drinks > 1 || hasTrash )
+        if (burgers > 0 || deluxeBurger > 0 || drinks > 1 || hasTrash ||hasRestockBox)
         {
             Debug.Log("Can't pick up a pizza with a burger in your hand");
             return false;
@@ -54,7 +54,7 @@ public class PlayerInventory : MonoBehaviour
         {
             hasPizza = true;
             return true;
-        } 
+        }
     }
 
     public bool HasPizza()
@@ -65,7 +65,7 @@ public class PlayerInventory : MonoBehaviour
     public bool RemovePizza()
     {
 
-        if (hasPizza )
+        if (hasPizza)
         {
             hasPizza = false;
             return true;
@@ -76,7 +76,24 @@ public class PlayerInventory : MonoBehaviour
             return false;
         }
     }
-
+    public bool AddRestockBox()
+    {
+        if (burgers > 0 || deluxeBurger > 0 || drinks > 0 || hasMop || hasTrash || hasPizza)
+        {
+            Debug.Log("Can't pick up RestockBox with stuff in your inventory");
+            return true;
+        }
+        else
+        {
+            Debug.Log("Picked up RestockBox");
+           hasRestockBox = true;
+            return false;
+        }
+    }
+    public void RemoveRestockBox()
+    {
+        hasRestockBox = false;
+    }
 
     // Methods
     // Adding a burger to the Inventory
@@ -84,7 +101,7 @@ public class PlayerInventory : MonoBehaviour
     {
         // first enter your pin number
         // Statement within the method
-        if(burgers > 1 || deluxeBurgers > 1 || drinks > 1 || hasPizza || ( burgers + drinks + deluxeBurgers > 1 ) || hasTrash )
+        if(burgers > 1 || drinks > 1 || hasPizza || (burgers > 0 && drinks > 0) || hasTrash || hasRestockBox )
         {
            // We are full and can't take the burger. 
         }
@@ -129,31 +146,11 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-
-    public bool HasDeluxeBurger() // Unused method
-    {
-        return (deluxeBurgers > 0);
-    }
-
-    public bool RemoveDeluxeBurger()
-    {
-        if (deluxeBurgers > 0)
-        {
-            deluxeBurgers--;
-            Debug.Log("Deluxe Burger Removed");
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
     public void AddDrink()
     {
         // first enter your pin number
         // Statement within the method
-        if ( burgers > 1 || drinks > 1 || hasPizza || ( burgers + drinks + deluxeBurgers > 1 ) || hasTrash )
+        if (burgers > 1 || drinks > 1 || hasPizza || (burgers > 0 && drinks > 0) || hasTrash || hasRestockBox )
         {
             // We are full and can't take the drink. 
         }
@@ -167,6 +164,21 @@ public class PlayerInventory : MonoBehaviour
         // Play sound effect
         // update the art
         // 
+    }
+
+    public bool HasDeluxeBurger() // Unused method
+    {
+        return (deluxeBurger > 0);
+    }
+
+    public bool RemoveDeluxeBurger() {
+        if (deluxeBurger > 0) {
+            deluxeBurger--;
+            Debug.Log("Deluxe Burger Removed");
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public bool RemoveDrink()

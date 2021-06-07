@@ -28,9 +28,9 @@ GameObject:
   - component: {fileID: 2903376440153333558}
   - component: {fileID: 8527316390032585018}
   - component: {fileID: 1696883486}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ Transform:
   m_GameObject: {fileID: 6129879830435051995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2216998511937301469}
   - {fileID: 4406251037347591343}
@@ -120,9 +120,10 @@ MonoBehaviour:
   hasPizza: 0
   burgers: 0
   drinks: 0
-  deluxeBurgers: 0
+  deluxeBurger: 0
   hasTrash: 0
   hasMop: 0
+  hasRestockBox: 0
 --- !u!1 &6749254569376573228
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501510276077436521}
   - component: {fileID: 309987692316343691}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cheeze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +192,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1566346579
-  m_SortingLayer: 0
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0.54280233, b: 0, a: 1}
@@ -214,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2216998511937301469}
   - component: {fileID: 950204913800773997}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pizza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +274,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1566346579
-  m_SortingLayer: 0
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0.7511099, b: 0.4575472, a: 1}
@@ -297,11 +298,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Employee
-      objectReference: {fileID: 0}
-    - target: {fileID: 3737741883109010823, guid: 49144db95e0763d4184f112829f7e284,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4406251037717677354, guid: 49144db95e0763d4184f112829f7e284,
         type: 3}
@@ -361,12 +357,12 @@ PrefabInstance:
     - target: {fileID: 8993054250106210042, guid: 49144db95e0763d4184f112829f7e284,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: -1229979497
+      value: 1566346579
       objectReference: {fileID: 0}
     - target: {fileID: 8993054250106210042, guid: 49144db95e0763d4184f112829f7e284,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49144db95e0763d4184f112829f7e284, type: 3}

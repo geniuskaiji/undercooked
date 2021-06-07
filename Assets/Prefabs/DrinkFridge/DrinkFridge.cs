@@ -23,6 +23,7 @@ public class DrinkFridge : MonoBehaviour
     public UnityEvent enterTriggerEvent = new UnityEvent();
     public UnityEvent exitTriggerEvent = new UnityEvent();
     public UnityEvent getDrinkEvent = new UnityEvent();
+    public UnityEvent restockDrinksEvent = new UnityEvent();
     // Start is called before the first frame update
 
     // --- Handle Art ---
