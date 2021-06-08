@@ -30,6 +30,7 @@ public class StoveScript : MonoBehaviour
     public UnityEvent startBurgerEvent = new UnityEvent();
     public UnityEvent flipBurgerEvent = new UnityEvent();
     public UnityEvent takeBurgerEvent = new UnityEvent();
+    public UnityEvent invIsFullEvent = new UnityEvent();
 
     public Animator anim;
 
@@ -176,17 +177,24 @@ public class StoveScript : MonoBehaviour
 
 	private void RemovePatty()
 	{
-		pattyGrilling = false;
-		//pattyReady = true;
+        if(inv.AddBurger()){
+            pattyGrilling = false;
+            //pattyReady = true;
 
-	//	pattyArtCooking.SetActive(false);	// Set the pattyArtCooking GameObject off
-		Debug.Log("Patty Removed from grill");
+            //	pattyArtCooking.SetActive(false);	// Set the pattyArtCooking GameObject off
+            Debug.Log("Patty Removed from grill");
 
-        // Done, remove Patty
-        anim.SetTrigger("RemoveBurger");
-        inv.AddBurger();
+            // Done, remove Patty
+            anim.SetTrigger("RemoveBurger");
 
-        takeBurgerEvent.Invoke();
+            takeBurgerEvent.Invoke();
+        } else{
+            // No room
+            Debug.Log("Can't pick up a burger, your hands are full");
+        }
+
+
+
     }
 
 }

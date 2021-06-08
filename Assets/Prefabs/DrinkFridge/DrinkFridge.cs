@@ -81,10 +81,9 @@ public class DrinkFridge : MonoBehaviour
         // give player the item
         // otherwise
         // show UI that the item is out. 
-        if (numberOfDrinksRemaining > 0) 
+        if (numberOfDrinksRemaining > 0 && inv.AddDrink()) 
         {
 
-            inv.AddDrink();
             getDrinkEvent.Invoke();
 
 
@@ -95,8 +94,11 @@ public class DrinkFridge : MonoBehaviour
             if (numberOfDrinksRemaining < 1) { 
                 hasDrinks = false;
             }
+            Debug.Log("Print out a message to the console");
+        }else{
+            // no drinks or inventory full
         }
-        Debug.Log("Print out a message to the console");
+       
             
     }
         public void RestockDrinks()
