@@ -113,7 +113,7 @@ public class StoveScript : MonoBehaviour
 		 *	- pattyGrilling = false;
 		 *	- pattyReady = true; */
 
-		if (pattyGrilling == false)
+		if (pattyGrilling == false && isReady == false)
 		{
 			// Run AddBurger method
 			AddPatty();
@@ -127,11 +127,12 @@ public class StoveScript : MonoBehaviour
 				// Run FlipBurger method.
 				FlipPatty();
 			}
-			else
-			{
+			else if(isReady){
 				// Run ReadyBurger method.
 				RemovePatty();
-			}
+			}else{
+                Debug.Log("How did we get here??");
+            }
 		}
 	}
 
@@ -166,6 +167,7 @@ public class StoveScript : MonoBehaviour
         //	pattyGrillingTimer = 0f;
         pattySideTwoGrillingTimer = 0;
 		pattySideGrilling = 1;
+        firstSideIsCooking = false;
 
 	//	pattyArtRaw.SetActive(false);		// Set the pattyArtRaw GameObject off
 	//	pattyArtCooking.SetActive(true);    // Set the pattyArtCooking GameObject on
@@ -186,8 +188,13 @@ public class StoveScript : MonoBehaviour
 
             // Done, remove Patty
             anim.SetTrigger("RemoveBurger");
-
+            isReady = false;
             takeBurgerEvent.Invoke();
+
+            anim.ResetTrigger("RawToCooking");
+            anim.ResetTrigger("CookingToCooked");
+            anim.ResetTrigger("Flip");
+
         } else{
             // No room
             Debug.Log("Can't pick up a burger, your hands are full");
