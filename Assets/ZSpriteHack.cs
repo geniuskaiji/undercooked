@@ -9,6 +9,9 @@ public class ZSpriteHack : MonoBehaviour
 
     public bool useAlternateTransformForPosition = false;
     public Transform altTransform;
+
+    public bool manualOffset = false;
+    public int manualOffsetAmount = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,10 @@ public class ZSpriteHack : MonoBehaviour
             }
 
             art.sortingOrder = (int)(pos.y*-10);
+
+            if(manualOffset){
+                art.sortingOrder += manualOffsetAmount;
+            }
         }
     }
 }
